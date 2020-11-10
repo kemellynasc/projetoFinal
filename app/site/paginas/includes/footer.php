@@ -1,15 +1,24 @@
-<h1>footer</h1>
+<div class="container-fluid table-secondary py-5">
+    <footer class="container text-center ">
+        <img src="app/assets/img/footer.jpg" alt="">
+    </footer>
+    <div class="container">
+        <p class="text-center pt-3 ">
+            Todos os direitos reservados &copy; 2020.
+        </p>
+    </div>
+</div>
 
 
 
-    <!-- jQuery -->
-    <script src="app/assets/js/jquery.js"></script>
+<!-- jQuery -->
+<script src="app/assets/js/jquery.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="app/assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- Bootstrap -->
+<script src="app/assets/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Funções Javascript -->
-    <script src="app/assets/js/funcoes.js"></script>
+<!-- Funções Javascript -->
+<script src="app/assets/js/funcoes.js"></script>
 
 </body>
 
