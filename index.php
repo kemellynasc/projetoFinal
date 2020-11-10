@@ -1,30 +1,20 @@
-
-<?php 
+<?php
 include_once "app/site/paginas/includes/header.php";
-?>
-    <!-- Navegação -->
-    <!-- Fim Navegação -->
 
-    <!-- Fim Header -->
+// Navegação 
+include_once "app/site/paginas/includes/navegacao.php";
+// Fim Navegação 
+
+// Fim Header 
+
+echo "<hr>";
+
+// Páginas do meu Site 
+echo '<h1>Minhas Páginas</h1>';
+//Fim Páginas do meu Site 
 
 
-    <!-- Páginas do meu Site -->
-    <!-- Fim Páginas do meu Site -->
+// Rodapé
+echo '<hr>';
 
-
-    <!-- Rodapé -->
-
-
-
-    <!-- jQuery -->
-    <script src="app/assets/js/jquery.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="app/assets/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Funções Javascript -->
-    <script src="app/assets/js/funcoes.js"></script>
-
-</body>
-
-</html>
+include_once "app/site/paginas/includes/footer.php";
