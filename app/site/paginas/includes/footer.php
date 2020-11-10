@@ -1,4 +1,4 @@
-<div class="container-fluid table-secondary pb-1">
+<div class="container-fluid table-secondary pt-2">
     <footer class="container text-center ">
         <img src="app/assets/img/footer.jpg" alt="">
     </footer>

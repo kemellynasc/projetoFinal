@@ -28,6 +28,6 @@
 <body>
     <!-- Header -->
 
-    <header class="container">
-        <img src="app/assets/img/bannerHeader.jpg" alt="">
+    <header class="container-fluid p-0">
+        <img src="app/assets/img/bannerHeader.jpg" class="img-fluid w-100 p-0"  alt="">
     </header>
