@@ -1,49 +1,43 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php
+// Header
+include_once "app/site/paginas/includes/header.php";
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto final</title>
+// Navegação 
+include_once "app/site/paginas/includes/navegacao.php";
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="app/assets/bootstrap/css/bootstrap.min.css">
+echo "<hr>";
 
-    <!-- Icomoon -->
-    <link rel="stylesheet" href="app/assets/icomoon/style.css">
+// Páginas do meu Site 
+// echo '<h1>Minhas Páginas</h1>';
 
-    <!-- outros -->
-    <link rel="stylesheet" href="">
+$paginas= isset($_GET['pg']);
 
-    <!-- Meu CSS -->
-    <link rel="stylesheet" href="">
+if ($paginas) {
+    # code...
+    switch ($_GET['pg']) {
+        
+        case 'inicial':
+            include_once "app/site/paginas/inicial.php";
+            break;
+
+        case 'produtos':
+            include_once "app/site/paginas/produtos.php";
+            break;
+
+        case 'contato':
+            include_once "app/site/paginas/contato.php";
+            break;
+        
+        default:
+        include_once "app/site/paginas/inicial.php";
+            break;
+    }
+} else {
+    include_once "app/site/paginas/inicial.php";
+}
 
 
-</head>
+echo '<hr>';
 
-<body>
-
-    <!-- Header -->
-    <!-- Fim Header -->
-
-
-    <!-- Páginas do meu Site -->
-    <!-- Fim Páginas do meu Site -->
-
-
-    <!-- Rodapé -->
-
-
-
-    <!-- jQuery -->
-    <script src="app/assets/js/jquery.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="app/assets/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Funções Javascript -->
-    <script src="app/assets/js/funcoes.js"></script>
-
-</body>
-
-</html>
+// Rodapé
+include_once "app/site/paginas/includes/footer.php";
